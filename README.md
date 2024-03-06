@@ -1,6 +1,6 @@
 # Resolução em Python
   Você precisa apenas ter o `python` instalado no seu computador. Então depois de baixar execute ele 
-pela IDE que você preferir. Quando ele for executado escreva no ###terminar o número da questão que você quer ver a resposta. É bem intuitivo.
+pela IDE que você preferir. Quando ele for executado escreva no **terminal** o número da questão que você quer ver a resposta. É bem intuitivo.
 
 # Resolução em HTML, CSS e Javascript
   Esse é ainda mais fácil que o anterior. Você só precisa baixar a pastas `questoes`, abri-la e clicar duas vezes no arquivo `index.html`
