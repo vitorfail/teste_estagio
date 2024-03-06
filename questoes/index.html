@@ -1,0 +1,87 @@
+<html>
+    <body>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <h1>Perguntas do Teste de Estagio</h1>
+        <p>Ao clicar nas perguntas é possivel visualizar as resoluções</p>
+        <section class="perguntas">
+            <div id="q1" class="questao">
+                <div class="titulo" onclick="exibir_pergunta('q1')">
+                    <h2>1: Observe o trecho de código abaixo:</h2>
+                </div>
+                <div class="container">
+                    <p>int INDICE = 13, SOMA = 0, K = 0;<br>
+
+                        enquanto K < INDICE faça<br>
+        
+                        {<br>
+                        <strong class="paragrafo">K = K + 1;<br></strong>
+                        <strong class="paragrafo">SOMA = SOMA + K;<br></strong>
+
+                        }<br>
+                        
+                        imprimir(SOMA);</p>
+                    <button class="mostrar" onclick="mostrar_resposta('r1')" >Resposta</button>
+                    <div id="r1" class="resposta">
+                        <p>
+                        def <strong style="color: rgb(155, 155, 41);">questao1()</strong>:<br>
+                            <strong  class="paragrafo"><strong style="color: blue;"> INDICE</strong> = 13<br></strong> 
+                            <strong  class="paragrafo"><strong style="color: blue;">SOMA</strong> = 0<br></strong> 
+                            <strong class="paragrafo"><strong style="color: blue;">K</strong> = 0<br></strong>
+
+                            <strong class="paragrafo"><strong style="color: rgb(126, 0, 119);">while</strong> <strong style="color: blue;">K</strong> < <strong style="color: blue;">INDICE</strong>:<br></strong>
+
+                            <strong class="paragrafo"><strong class="paragrafo"><strong style="color: blue;">K</strong> = <strong style="color: blue;">K</strong> + 1<br></strong></strong>
+
+                            <strong class="paragrafo"><strong class="paragrafo"><strong style="color: blue;">SOMA</strong> = <strong style="color: blue;">SOMA</strong> + <strong style="color: blue;"></strong>K<br></strong></strong>
+                        <strong style="color: rgb(155, 155, 41);">print</strong>(<strong style="color: blue;">SOMA</strong>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="q2" class="questao">
+                <div class="titulo" onclick="exibir_pergunta('q2')">
+                    <h2>2: Sequência de Fibonachi</h2>
+                </div>
+                <div class="container">
+                    <p>Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma 
+                        dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na 
+                        linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</p>
+                    <button class="mostrar" onclick="mostrar_resposta('r2')" >Resposta</button>
+                    <div id="r2" class="resposta">
+                        <p>
+
+                        def <strong style="color: rgb(155, 155, 41);">fibonachi</strong>(numero):<br>
+                            <strong  class="paragrafo">a, b = 0, 1<br></strong> 
+                            <strong class="paragrafo"><strong style="color: rgb(126, 0, 119);">while</strong> a <=  numero<br></strong>
+
+                            <strong class="paragrafo"><strong class="paragrafo"><strong style="color: rgb(126, 0, 119);">return</strong> <strong style="color: blue;">True</strong><br></strong></strong>
+                            <strong  class="paragrafo">a, b = b, a + b<br></strong>
+                            <strong class="paragrafo"><strong style="color: rgb(126, 0, 119);">return</strong> <strong style="color:rgb(65, 134, 0);">False</strong><br></strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function mostrar_resposta(q){
+                var questao = document.getElementById(q)
+                if(questao.className== "resposta show"){
+                    questao.className= "resposta"
+                }
+                else{
+                    questao.className= "resposta show"
+                }
+            }
+            function exibir_pergunta(q){
+                var questao = document.getElementById(q)
+                if(questao.className== "questao show"){
+                    questao.className= "questao"    
+                }
+                else{
+                    questao.className= "questao show"
+                }
+            }
+        </script>
+    </body>
+</html>
