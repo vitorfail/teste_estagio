@@ -132,3 +132,30 @@ body{
 .perguntas .resposta.show{
     height: auto;
 }
+.input{
+    margin-left: 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.input input{
+    color: black;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid rgb(84, 119, 84);
+    background: transparent;
+}
+.input input:focus{
+    background: whitesmoke;
+    border-bottom: 2px solid rgb(50, 219, 50);
+}
+.input input::placeholder{
+    font-size: 16px;
+    color: rgb(165, 165, 165);
+}
+li{
+    margin-left: 30px;
+    color: black;
+}
